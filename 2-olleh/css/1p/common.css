@@ -1,0 +1,113 @@
+    @charset "utf-8";
+    
+    /* 공통부분 */
+    @import url('https://fonts.googleapis.com/css2?family=Gothic+A1&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+    body{font-family: "open sans", "gothic a1", sans-serif;}
+    *{margin: 0;padding: 0;box-sizing: border-box;text-decoration: none;list-style: none;}
+    img{width: 100%; display: block;}
+    .flex-box{display: flex;flex-wrap: wrap;}
+    .container{max-width: 1400px; margin: auto;}
+
+    /* 공통 헤더부분 */
+    header .flex-box {align-items: center; justify-content: space-between}
+    .logo img{width: 200px;}
+    header{background-color: #f1f1f1;color: #121212; position: fixed;top: 0;left: 0;width: 100%;z-index: 100;padding: 20px 0;} 
+    header ul li{display: inline-block; font-weight: bold;font-size: 20px; padding: 0 30px;}
+    header a{color: #121212;}
+    header a:hover{color: #2bb8a3;}
+    .menu{position: relative;display: none;}
+    
+    /* 풋터 */
+    footer{background-color: #f1f1f1;padding: 40px 20px;overflow: hidden; margin-top: 120px;}
+    footer .flex-box {align-items: center; justify-content: space-between;}
+    footer .footer-logo img{width: 260px;margin: auto;}
+    footer .logo2 img{width: 220px;}
+    footer .logo2 p{font-size: 16px; margin-top: 15px;padding-left: 10px;font-weight: bold;}
+    footer .info{margin-top: 50px;font-size: 16px;}
+    footer .info p{padding: 4px 30px;}
+    footer .info span{font-weight: bold;}
+    footer ul li{display: inline-block;}
+    footer ul li a{text-decoration: none;color: #121212; font-size: 20px;font-weight: bold; padding: 0 30px;}
+    footer .flex-box > div:nth-child(1) {width: 24%;}
+    footer .flex-box > div:nth-child(2) {width: 47%;}
+    footer .flex-box > div:nth-child(3) {width: 28%;}
+
+
+
+    /* 창업문의 */
+    
+    
+    .store{position: fixed;width:100%; top: 700px; right: 50px;width: 100px;}
+    .icon svg {width: 120px;height: 120px;outline: 3px solid #2bb8a3;outline-offset: 0px;border-radius: 50%; background-color: #ffffff;}
+    .icon svg path {transform: scale(0.8); transform-origin: center; transform-box: fill-box;}
+    .icon span {margin-top: 10px;font-size: 26px;color: #2bb8a3;display: block;text-align: center;}
+
+    .sec3-2-npc{display: none;position: fixed; width: 100%;bottom: 0;z-index: 101;background-color: #2bb8a3;display: none;}
+
+    .sec3-2-npc img{width: 50%;}
+    .sec3-2-npc .bnav a.made span {display: inline-block;}
+    .bnav.flex-box {justify-content: space-around;padding: 10px;vertical-align: middle;}
+    .bnav.flex-box span{color: #effffc;align-items: center;}
+    .bnav .made span {font-size: 22px;padding: 0 5px;}
+    .bnav .made svg {width: 60px;height: 60px;fill: #effffc;}
+    .bnav li a.made {align-items: center;display: flex;}
+
+
+
+    /* 미디어쿼리 */
+    @media(max-width: 1024px){
+        .container{padding: 0 20pxw;}
+    header ul li{font-size: 18px;}
+    header .logo img{width: 150px; padding-left: 30px;}
+
+    /* 풋터 */
+        footer .flex-box > div:nth-child(1) {width: 100%;}
+        footer .flex-box > div:nth-child(2) {width: 100%;}  
+        footer .flex-box > div:nth-child(3) {width: 100%;}
+        footer .footer-logo img{width: 200px;margin: 0 30px;}
+        footer ul li a {display: inline-block;margin-top: 40px;padding: 0 35px;font-size: 18px;}
+        footer .info p {padding: 8px 30px;font-size: 20px;}
+        footer .logo2 {display: flex;align-items: flex-end;}
+        footer .logo2 img{width: 120px;margin-left: 25px; margin-top: 15px;}
+        footer .logo2 p{padding: 0 10px;font-size: 20px;}
+        .bnav.flex-box {padding: 5px;}
+        
+
+        /* 창업문의 */
+        .sec3-2{display: none;}
+        .sec3-2-npc{display: block;}
+        .icon svg{cursor: pointer;}
+    }
+
+    @media(max-width:767px){
+        header{padding: 10px;}
+        header ul li{display: none;}
+        header .logo img{padding: 0 0;}
+        .menu{display: block; align-items: center;padding: 0 15px;}
+        .menu .list{top: 70px;right: 15px;background: #f1f1f1;z-index: 200;color: #121212;display: none;}
+        .menu .material-symbols-outlined {font-size: 34px; vertical-align: middle;}
+        .logo{width: 150px; padding-left: 15px;}
+        .menu .list {position: fixed;top: 46px;right: 0;background-color: #f1f1f1;display: none;width: 100vw;z-index: 999;}
+        .menu .list li {display: block;text-align:center;padding: 15px;}
+        .menu .list li:nth-child(1) { border-bottom: solid 1px #121212;}
+        .menu .list li:nth-child(2) { border-bottom: solid 1px #121212;}
+        
+        /* 풋터 */
+        footer .footer-logo img {width: 150px; margin: 0 10px;}
+        footer ul li a {font-size: 14px;padding: 0 10px;margin-top: 20px;}
+        footer .info{margin-top: 10px;}
+        footer .info p {font-size: 14px;padding: 5px 10px;}
+        footer .logo2 img {width: 100px;margin-top: 20px;margin-left: 5px;}
+        footer .logo2 p {font-size: 14px;}
+
+        /* 창업문의 */
+        .bnav .made svg {width: 30px; height: 30px;}
+        .bnav .made span {font-size: 18px;}
+    }
+
+    @media(max-width:400px){
+        footer {padding: 20px 10px;}
+        footer ul li a {padding: 0 5px;}
+        footer .info p {padding: 3px 5px;}
+        .bnav .made span {font-size: 17px;}
+    }
