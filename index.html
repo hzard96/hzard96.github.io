@@ -71,7 +71,7 @@ body{font-family: "Libre Baskerville", "Noto Sans KR", sans-serif;position: rela
 
 
     /* sec3 */
-    .container{margin-top: 150px;height:calc(100vh - 150px) }
+    .sec3 .container{margin-top: 150px;height:calc(100vh - 150px) }
     .sec3{position: relative;}
     .sec3 p{font-size: 24px;text-align: center; margin-top: 20px; color: #6e6e6e;}
 
@@ -82,11 +82,14 @@ body{font-family: "Libre Baskerville", "Noto Sans KR", sans-serif;position: rela
     
 
     /* sec4 */
+    .sec4 .container{margin-top: 150px;height:calc(100vh - 150px) }
+    .sec4{position: relative;}
     .sec4 p{font-size: 24px;text-align: center; margin-top: 20px; color: #6e6e6e;}
     .sec4 .co-box.flex-box{position: absolute; top: 50%; justify-content: center; 
     transform: translateY(-50%); align-items: center; width: 100%;}
     .sec4 .co-box.flex-box> div {width: 20%;padding: 30px;}
 
+        
 /* 모달창 */
 
 .modal {
@@ -258,7 +261,7 @@ body{font-family: "Libre Baskerville", "Noto Sans KR", sans-serif;position: rela
             <div class="left">
                 <img src="img/logo.svg" alt="HZARD 로고" />
             </div>
-            <div class="right">
+            <div class="right"> 
                 <h3>
                 <p>흔들려도 지지 않고, <br>걸어가는 디자이너 <span>유희두</span>입니다.</p>
                 </h3>
@@ -324,32 +327,50 @@ body{font-family: "Libre Baskerville", "Noto Sans KR", sans-serif;position: rela
                         <img src="img/pd5.png" alt="KORIN" />
                         <p>KORIN</p>
                     </div>
+                    <div class="modal-open" onclick="open_modal(7)">
+                        <img src="img/pd6.png" alt="KORIN" />
+                        <p>NECAFE</p>
+                    </div>
                     </div>
                 </div>
     </div>
 </section>
 
-<section class="sec4">
+<section class="sec3">
     <div class="container">
-        <h2>배너 디자인</h2>
+        <h2>상세 페이지</h2>
 
-        <div class="co-box flex-box">
-            <div  class="modal-open" onclick="open_modal(7)">
-                <img src="img/ba1.png" alt="">
-                <p>STARBUCKS</p>
-            </div>
-            <div  class="modal-open" onclick="open_modal(8)">
-                <img src="img/ba2.png" alt="">
-                <p>GARMIN</p>
-            </div>
-            <div  class="modal-open" onclick="open_modal(9)">
-                <img src="img/ba3.png" alt="">
-                <p>OLIVE YOUNG</p>
-            </div>
-        </div>
+        <div class="sec3-1">
+                    <div class="co-box flex-box top">
+                    <div class="modal-open" onclick="open_modal(8)">
+                        <img src="img/ba1.png" alt="starbucks" />
+                        <p>STARBUCKS</p>
+                    </div>
+                    <div class="modal-open" onclick="open_modal(9)">
+                        <img src="img/ba2.png" alt="garmin" />
+                        <p>GARMIN</p>
+                    </div>
+                    <div class="modal-open" onclick="open_modal(10)">
+                        <img src="img/ba3.png" alt="olive young" />
+                        <p>OLIVE YOUNG</p>
+                    </div>
+                    </div>
+        
+                    <div class="co-box flex-box bot">
+                        <div class="modal-open" onclick="open_modal(11)">
+                            <img src="img/ba4.png" alt="multi brand" />
+                            <p>MULTI BRAND</p>
+                        </div>
+                        <div class="modal-open" onclick="open_modal(12)">
+                            <img src="img/ba5.png" alt="multi brand2" />
+                            <p>MULTI BRAND2</p>
+                        </div>
+                    </div>
+                </div>
     </div>
-
 </section>
+
+
 
 <div class="space"></div>
 
@@ -503,6 +524,27 @@ body{font-family: "Libre Baskerville", "Noto Sans KR", sans-serif;position: rela
         <div class="modal-wrap">
             
           
+            <div class="modal-body">
+               <div class="modal-close"><i class="fa-solid fa-xmark"></i></div>
+                <p>상세 페이지</p>
+                <h2>NESCAFE</h2>
+                <p class="story">직관적인 정보 전달에 중점을 두어 텍스트 구성과 시각 흐름에 따라서 편집했습니다.<br>
+                제품의 주요 기능과 장점을 명확하게 전달할 수 있도록 각 섹션을 구분하였으며,<br>
+                배치와 컬러 톤은 브랜드 아이덴티티에 맞춰 통일감 있게 구성했습니다.<br>
+                전체적으로 복잡한 요소 없이, 정보 중심의 간결하고 깔끔한 상세페이지를 목표로 디자인했습니다.</p>
+                <img src="img/img/pd6-1.jpg" alt= />
+                <img src="img/img/pd6-2.jpg" alt=/>
+                <img src="img/img/pd6-3.jpg" alt=/>
+                
+            </div>
+
+        </div>
+</div>
+
+<div class="modal">
+        <div class="modal-wrap">
+            
+          
             <div class="modal-body pc">
                <div class="modal-close"><i class="fa-solid fa-xmark"></i></div>
                 <p>배너 디자인</p>
@@ -540,7 +582,30 @@ body{font-family: "Libre Baskerville", "Noto Sans KR", sans-serif;position: rela
                 <img src="img/img/ba3-1.jpg" alt= />
                 <img src="img/img/ba3-2.jpg" alt= />
             </div>
+        </div>
+</div>
 
+<div class="modal">
+        <div class="modal-wrap">
+            <div class="modal-body pc">
+               <div class="modal-close"><i class="fa-solid fa-xmark"></i></div>
+                <p>배너 디자인</p>
+                <h2>MULTI BRAND</h2>
+                <img src="img/img/ba4-1.jpg" alt= />
+                <img src="img/img/ba4-2.jpg" alt= />
+            </div>
+        </div>
+</div>
+
+<div class="modal">
+        <div class="modal-wrap">
+            <div class="modal-body pc">
+               <div class="modal-close"><i class="fa-solid fa-xmark"></i></div>
+                <p>배너 디자인</p>
+                <h2>MULTI BRAND</h2>
+                <img src="img/img/ba5-1.jpg" alt= />
+                <img src="img/img/ba5-2.jpg" alt= />
+            </div>
         </div>
 </div>
 <!-- 모달 end -->
