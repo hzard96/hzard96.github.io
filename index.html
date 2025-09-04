@@ -88,9 +88,13 @@ body{font-family: "Libre Baskerville", "Noto Sans KR", sans-serif;position: rela
     .sec4 .container{margin-top: 150px;height:calc(100vh - 150px) }
     .sec4{position: relative;}
     .sec4 p{font-size: 24px;text-align: center; margin-top: 20px; color: #6e6e6e;}
-    .sec4 .co-box.flex-box{position: absolute; top: 50%; justify-content: center; 
-    transform: translateY(-50%); align-items: center; width: 100%;}
-    .sec4 .co-box.flex-box> div {width: 20%;padding: 30px;}
+
+    .sec4-1{position: absolute;top: 50%; 
+    transform: translateY(-50%);  width: 100%;}
+    .sec4 .co-box.flex-box{align-items: center;justify-content: center; }
+    .sec4 .co-box.flex-box> div { width: 20%;padding: 30px;}
+    .sec4 .co-box.flex-box> div img{transition: all 0.4s ease-in-out;}
+    .sec4 .co-box.flex-box> div img:hover{transform: scale(1.1); border-radius: 30px;}
 
         
 /* 모달창 */
@@ -338,11 +342,11 @@ body{font-family: "Libre Baskerville", "Noto Sans KR", sans-serif;position: rela
     </div>
 </section>
 
-<section class="sec3">
+<section class="sec4">
     <div class="container">
         <h2>배너 디자인</h2>
 
-        <div class="sec3-1">
+        <div class="sec4-1">
                     <div class="co-box flex-box top">
                     <div class="modal-open" onclick="open_modal(8)">
                         <img src="img/ba1.png" alt="starbucks" />
