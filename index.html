@@ -10,7 +10,7 @@
 <title>HZARD</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Noto+Sans+KR:wght@100..900&display=swap');
-body{font-family: "Libre Baskerville", "Noto Sans KR", sans-serif;position: relative;}
+body{font-family: "Libre Baskerville", "Noto Sans KR", sans-serif;position: relative; overflow: hidden;}
         *{margin: 0; padding: 0;box-sizing: border-box;list-style: none;text-decoration: none;}
     img{width: 100%; display: block;}
     .flex-box{display: flex;flex-wrap: wrap;}
@@ -25,8 +25,8 @@ body{font-family: "Libre Baskerville", "Noto Sans KR", sans-serif;position: rela
     .space{margin-top: 150px;}
 
 /*     sec0 */
-    .sec0{background-color: #58C3E0;width: 100%; height: 100vh;position: fixed; z-index: 100;top: 0px;left: 0px;
-    animation-name: hide; animation-duration: 0.5s; animation-delay: 5s; animation-fill-mode: forwards; transform: translateZ(0);
+    .sec0{background-color: #58C3E0;width: 100%; height: 100vh;position: fixed; z-index: 100;top: 0px;left: 0px;transition: all 0.8s;
+    /* animation-name: hide; animation-duration: 0.5s; animation-delay: 3s; animation-fill-mode: forwards; transform: translateZ(0); */
     }
     @keyframes hide{from{}to{left:-100% ;}}
     .sec0 img{width: 100%;;position: absolute;left: 50%;top: 50%;transform: translate(-50%,-50%);}
@@ -654,6 +654,13 @@ body{font-family: "Libre Baskerville", "Noto Sans KR", sans-serif;position: rela
                 $('.modal').css('display','none');
                             });  
          } ;
+
+
+$('.sec0').click(function(){
+                $('body').css('overflow','auto');
+                $(this).css('left','-100%');
+                            });  
+
 </script>
 
 <script>
@@ -666,6 +673,7 @@ body{font-family: "Libre Baskerville", "Noto Sans KR", sans-serif;position: rela
             // 애니메이션 클래스
             document.querySelector('.walk-r').classList.add('rotate');
             document.querySelector('.walk-r2').classList.add('rotate');
+             
         }, 1000); // 1초 후 실행
     });
 </script>
