@@ -1,0 +1,554 @@
+    <!DOCTYPE html>
+    <html lang="ko">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/5cd78369ac.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" href="img/1p/favicon.png" type="image/png" sizes="32x32">
+    <title>novelpia</title>
+    <style>
+    </style>
+    </head>
+    <body>
+
+    <div class="modal">
+            <div class="modal-wrap">           
+              
+                <div class="modal-body">
+                  <div class="modal-close"><i class="fa-solid fa-xmark"></i></div>
+                    <h2>웹 페이지 설명서</h2>
+                    <img src="img/intro.png" alt= />
+                </div>
+
+            </div>
+    </div>
+
+    <header>
+      <div class="container flex-box">
+        <div class="logo flex-box">
+          <a href="index.html"><img src="img/1p/logo.svg" alt="logo"></a>
+          <div class="logo-tag flex-box">
+            <a href="#"><p>라노벨</p></a>
+            <a href="#"><p>웹툰</p></a>
+          </div>
+        </div>
+
+
+        <nav class="menu">
+          <ul>
+            <li><span class="material-symbols-outlined">search</span></li>
+            <li> 
+              <span class="material-symbols-outlined">account_circle</span>
+                <ul class="sub">
+                  <li class="profile flex-box">
+                    <div class="profile-main flex-box">
+                        <img src="img/1p/pro.png" alt="">
+                        <p>노벨피아</p>
+                    </div>
+                    
+                    <div class="profile-actions flex-box">
+                      <div class="mode-toggle-btn" id="modeToggle">
+                        <img src="img/1p/side-ch.png" alt="normal" id="ch1" class="mode-state active"> 
+                        <img src="img/1p/side-ch2.png" alt="adult" id="ch2" class="mode-state">
+                  </div>
+                        <span class="material-symbols-outlined">settings</span>
+                        <span class="material-symbols-outlined">close</span>
+                    </div>
+                </li>
+                <div class="probar">
+                  <li class="flex-box ">
+                    <span>PLUS 멤버쉽</span><p>2025.11.30 23:59:59까지</p>
+                  </li>
+                </div>
+                <li class="coin">내 재화</li>
+                <li class="coin-info flex-box">
+                    <div class="my-coin">
+                        <img src="img/1p/coin.svg" alt="">
+                        <p>코인</p>
+                        <p class="count">50</p>
+                    </div>
+                    <div class="diamond">
+                        <img src="img/1p/diamond.svg" alt="">
+                        <p>마일리지</p>
+                        <p class="count">50</p>
+                    </div>
+                </li>
+                <li class="menu-link flex-box">
+                  <span class="material-symbols-outlined">auto_stories</span>
+                  <p>작품 관리</p>
+              </li>
+              <li class="menu-link flex-box">
+                  <span class="material-symbols-outlined">bookmark</span>
+                  <p>서비스</p>
+              </li>
+              <li class="menu-link flex-box">
+                  <span class="material-symbols-outlined">shopping_bag</span>
+                  <p>굿즈샵</p>
+              </li>
+              <li class="menu-link flex-box">
+                  <span class="material-symbols-outlined">headset_mic</span>
+                  <p>고객 센터</p>
+              </li>
+
+              <li class="logout">
+                <p>로그아웃</p>
+              </li>
+                </ul>
+          </ul>
+        </nav>
+      </div>
+
+      <div>
+        <div class="container">
+          <div class="top-nav flex-box">
+            <a href="#"><p>공모전</p></a>
+            <a href="index2.html"><p>랭킹</p></a>
+            <a href="#"><p>만화</p></a>
+            <a href="#"><p>내서제</p></a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="sec1-pc">
+      <div class="container">
+        
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            
+            <div class="swiper-slide">
+              <div>
+                  <img src="img/1p/pc-ba.png" alt="">
+              </div>
+            </div>
+            
+            <div class="swiper-slide">
+            <div>
+                  <img src="img/1p/pc-ba2.png" alt="">
+            </div>
+            </div>
+            
+            <div class="swiper-slide">
+            <div>
+                  <img src="img/1p/pc-ba3.png" alt="">
+                  <p>
+            </div>
+            </div>
+            
+    
+          </div>      
+    
+          <!-- 페이지네이션 -->
+          <div class="swiper-pagination" ></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec1-mo">
+      <div class="swiper mySwiper_2">
+        <div class="swiper-wrapper">
+          
+          <div class="swiper-slide">
+            <div>
+                <img src="img/1p/mo-ba.png" alt="">
+            </div>
+          </div>
+          
+          <div class="swiper-slide">
+            <div>
+                  <img src="img/1p/mo-ba2.png" alt="">
+            </div>
+          </div>
+          
+          <div class="swiper-slide">
+            <div>
+                  <img src="img/1p/mo-ba3.png" alt="">
+            </div>
+          </div>
+          
+        </div>      
+  
+        <div class="swiper-pagination" ></div>
+      </div>
+      </section>
+
+      <section class="sec2">
+        <div class="container">
+            <div class="battle flex-box">
+                <div class="title-group flex-box">
+                    <img src="img/1p/rocket.png" alt="">
+                    <p>우주최강 공모전</p>
+                </div>
+                <p class="more-link">더 보기</p>
+            </div>
+            
+            <div class="bat-pa"> 
+                <div class="img-box flex-box">
+                  <div class="work-card">
+                      <img src="img/1p/to1.png" alt="">
+                      <span>버튜버 매니지먼트</span>
+                      <p>별꽃라떼</p>
+                  </div>
+                  
+                  <div class="work-card">
+                      <img src="img/1p/to2.png" alt="">
+                      <span>지구 유일의 연글술사..</span>
+                      <p>롱롱단</p>
+                  </div>
+                  
+                  <div class="work-card">
+                      <img src="img/1p/to3.png" alt="">
+                      <span>천재요리사는 아내와..</span>
+                      <p>바라밤</p>
+                  </div>
+                  
+    
+                  <div class="work-card">
+                      <img src="img/1p/to4.png" alt="">
+                      <span>마탑의 무기계약직 마..</span>
+                      <p>공단86</p>
+                  </div>
+                  
+    
+                  <div class="work-card">
+                      <img src="img/1p/to5.png" alt="">
+                      <span>니들 생각 다 들린다</span>
+                      <p>유4</p>
+                  </div>
+                  
+    
+                  <div class="work-card">
+                      <img src="img/1p/to6.png" alt="">
+                      <span>내 제자 내놔라</span>
+                      <p>04공사</p>
+                  </div>
+                </div>
+                
+                </div>
+        </div>
+    </section>
+
+    <section class="sec2-mo">
+      <div class="container">
+          <div class="battle flex-box">
+              <div class="title-group flex-box">
+                  <img src="img/1p/rocket.png" alt="">
+                  <p>우주최강 공모전</p>
+              </div>
+              <p class="more-link">더 보기</p>
+          </div>
+          
+          <div class="bat-pa"> 
+              <div class="swiper mySwiper_3"> 
+                  
+                  <div class="swiper-wrapper img-box flex-box"> 
+                    
+                    <div class="work-card swiper-slide">
+                        <img src="img/1p/to1.png" alt="">
+                        <span>버튜버 매니지먼트</span>
+                        <p>별꽃라떼</p>
+                    </div>
+                    
+                    <div class="work-card swiper-slide">
+                        <img src="img/1p/to2.png" alt="">
+                        <span>지구 유일의 연글술사..</span>
+                        <p>롱롱단</p>
+                    </div>
+                    
+                    <div class="work-card swiper-slide">
+                        <img src="img/1p/to3.png" alt="">
+                        <span>천재요리사는 아내와..</span>
+                        <p>바라밤</p>
+                    </div>
+                    
+                    <div class="work-card swiper-slide">
+                        <img src="img/1p/to4.png" alt="">
+                        <span>마탑의 무기계약직 마..</span>
+                        <p>공단86</p>
+                    </div>
+                    
+                    <div class="work-card swiper-slide">
+                        <img src="img/1p/to5.png" alt="">
+                        <span>니들 생각 다 들린다</span>
+                        <p>유4</p>
+                    </div>
+                    
+                    <div class="work-card swiper-slide">
+                        <img src="img/1p/to6.png" alt="">
+                        <span>내 제자 내놔라</span>
+                        <p>04공사</p>
+                    </div>
+                  </div>
+              </div>
+          </div>
+          
+      </div>
+  </section>
+
+  <section class="sec3 container">
+    <div class="rank flex-box">
+        <p class="main">실시간 노벨랭킹</p>
+        <div class="rank-control flex-box">
+            <a href="#"><p class="now">실시간</p></a>
+            <a href="#"><p class="week">주간</p></a>
+        </div>
+    </div>
+
+    <div class="info-line flex-box">
+      <div class="time-info">
+          <span id="ranking-time">11:00</span> <sapn class="time-txt">기준</sapn>
+    </div>
+    <span class="filter-display flex-box">
+      <p>조회순</p>
+      <span class="material-symbols-outlined">
+          keyboard_arrow_down 
+      </span>
+    </span>
+    </div>
+
+    <div class="choice flex-box"> 
+      
+      <ul class="flex-box">
+        <li>전체</li>
+        <li>판타지</li>
+        <li>현대판타지</li>
+        <li>로맨스</li>
+      </ul>
+      <a href="#"><p class="more-link">더 보기</p></a>
+  </div>
+
+  <div class="rank-gr flex-box"> 
+    <div class="swiper mySwiper_4"> 
+        
+        <div class="swiper-wrapper"> 
+          
+            <div class="work-card swiper-slide">
+                <img src="img/1p/ra1.png" alt="">
+                <span>부인은 밀밭에서 기달렸다</span>
+                <p>papapa</p>
+            </div>
+          
+            <div class="work-card swiper-slide">
+                <img src="img/1p/ra2.png" alt="">
+                <span>회귀자와 맹인성녀</span>
+                <p>papapa</p>
+            </div>
+          
+            <div class="work-card swiper-slide">
+                <img src="img/1p/ra3.png" alt="">
+                <span>히어로가 집착하는 악당이..</span>
+                <p>서은하</p>
+            </div>
+          
+            <div class="work-card swiper-slide">
+                <img src="img/1p/ra4.png" alt="">
+                <span>천살검협</span>
+                <p>papapa</p>
+            </div>
+            
+        </div>
+    </div>
+  </div>
+
+
+    </div>
+  </section>
+
+  <section class="sec4 container">
+    <div class="rank-control flex-box">
+        <p class="main">노벨랭킹</p>
+        <div class="how flex-box">
+          <a href="#"><p class="more-link">더 보기</p></a>
+        </div>
+    </div>
+
+  <div class="rank-gr flex-box"> 
+    <div class="swiper mySwiper_5"> 
+        
+        <div class="swiper-wrapper"> 
+          
+            <div class="work-card swiper-slide">
+                <img src="img/1p/th1.png" alt="">
+                <span>섞일 수 없는 이 종족 아..</span>
+                <p>이만두</p>
+            </div>
+          
+            <div class="work-card swiper-slide">
+              <img src="img/1p/th2.png" alt="">
+              <span>천하제일인의 소꿉친구</span>
+              <p>우비람</p>
+          </div>
+          
+          <div class="work-card swiper-slide">
+            <img src="img/1p/th3.png" alt="">
+            <span>미래에서 온 연애편지</span>
+            <p>알콜중독</p>
+        </div>
+          
+        <div class="work-card swiper-slide">
+          <img src="img/1p/th4.png" alt="">
+          <span>아카데미의 순애 흑기사</span>
+          <p>한생한사</p>
+      </div>
+            
+        </div>
+    </div>
+  </div>
+
+
+    </div>
+  </section>
+
+  <section class="sec0">
+    <nav class="mobile-nav flex-box">
+      <div class="nav-item">
+          <a href="index.html"><span class="material-symbols-outlined">home</span>
+          <p>홈</p></a>
+      </div>
+      <div class="nav-item active">
+          <a href="#"><span class="material-symbols-outlined">book_ribbon</span>
+          <p>라노벨</p></a>
+      </div>
+      <div class="nav-item">
+          <a href="#"><span class="material-symbols-outlined">celebration</span>
+          <p>이벤트</p></a>
+      </div>
+      <div class="nav-item">
+          <a href="#"><span class="material-symbols-outlined">notifications</span>
+          <p>알림</p></a>
+      </div>
+      <div class="nav-item">
+          <a href="#"><span class="material-symbols-outlined">history</span>
+          <p>최근기록</p></a>
+      </div>
+    </nav>
+  </section>
+
+  <footer class="footer">
+    <div class="fo-top flex-box container">
+      <img src="img/1p/footer-logo.svg" alt="">
+      <p>이용약관</p>
+      <p>개인정보 처리</p>
+      <p>회사소개</p>
+    </div>
+
+    <div class="fo-do">
+      <p>
+        주식회사 메타크래프트 대표 유정석 사업자등록번호 210-81-79781 <br>
+        통신판매업 제2022-서울구로-2494호 [확인]주소 서울특별시 구로구 디지털로31길 12,(구로동, TP타워) 9층
+      </p>
+      <p>
+        고객센터[1:1문의하기] 1588-3644 help@novelpia.com
+        운영시간 평일 AM 10:00 ~ PM 07:00 (휴게시간 PM 12:50 ~ 2:10)
+      </p>
+      <p>
+        주의! 본 사이트에 등록된 컨텐츠는 사이트 및 원 저작권자에 권리가 있는 컨텐츠이며,
+        무단 복제/전송/수정/배포는 법적 처벌을 받을 수 있습니다.
+      </p>
+    </div>
+  </footer>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        autoplay: {delay: 3000,disableOnInteraction: false,},
+        
+        pagination: {
+            clickable: true,
+            el: ".swiper-pagination",
+        },
+        loop: true,
+    });
+
+
+      var swiper_2 = new Swiper(".mySwiper_2", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        autoplay: {delay: 3000,disableOnInteraction: false,},
+
+        pagination: {
+          el: ".sec1-mo .swiper-pagination",
+          clickable: true,
+        },
+        loop: true,
+
+      });
+  var swiper_3 = new Swiper(".mySwiper_3", {
+        spaceBetween: 10,
+        loop: false, // 루프 기능 제거 유지
+        pagination: false, // 페이지네이션 제거 유지
+        
+        // ⭐⭐ 768px 미만(모바일)의 기본값을 3.5로 설정합니다. ⭐⭐
+        slidesPerView: 2.5, 
+
+        breakpoints: {
+          // 창 너비가 768px 이상일 때 (테블릿 이상)
+          768: {
+            slidesPerView: 4.3,
+          },
+        }
+        
+
+
+      });
+      var swiper_4 = new Swiper(".mySwiper_4", {
+      spaceBetween: 10,
+      loop: false,
+      pagination: false,
+
+      // ⭐ 1. 768px 미만의 모바일 기본값 설정
+      slidesPerView: 2.5,
+      spaceBetween: 10,
+
+      breakpoints: {
+          // ⭐ 2. 768px 이상 PC 환경 설정
+          768: {
+              slidesPerView: 4,     // PC에서는 4개의 작품을 모두 보여줌
+              spaceBetween: 20,
+          },
+      }
+  });
+
+  var swiper_5 = new Swiper(".mySwiper_5", {
+      spaceBetween: 10,
+      loop: false,
+      pagination: false,
+
+      // ⭐ 1. 768px 미만의 모바일 기본값 설정
+      slidesPerView: 2.5,
+      spaceBetween: 10,
+
+      breakpoints: {
+          // ⭐ 2. 768px 이상 PC 환경 설정
+          768: {
+              slidesPerView: 4,     // PC에서는 4개의 작품을 모두 보여줌
+              spaceBetween: 20,
+          },
+      }
+  });
+
+
+    </script> 
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/index.js"></script>
+
+
+
+    </body>
+    </html>
