@@ -93,6 +93,9 @@
         .sec4 .rank-gr {gap: 9px;padding: 0 9px;}
         .sec4 .rank-gr .work-card.swiper-slide span {font-size: 16px;}
         .sec4 .rank-gr .work-card.swiper-slide p {font-size: 14px;}
+
+        .modal, .modal-wrap{display: none};
+      
         
 
 
@@ -128,6 +131,9 @@
         .sec4 .rank-gr {margin-top: 20px;}
         .sec4 .rank-gr .work-card.swiper-slide span {font-size: 14px;}
         .sec4 .rank-gr .work-card.swiper-slide p {font-size: 13px;}
+
+        .modal, .modal-wrap{display: none};
+    
 
   
       }
