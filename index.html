@@ -59,6 +59,8 @@ body{font-family: "Libre Baskerville", "Noto Sans KR", sans-serif;position: rela
     .link-on-icon {color: #0071e3;}
     .link-on-icon:hover {color: #58C3E0;}
 
+
+
     /*sec2 */
     .sec2 p{font-size: 24px;text-align: center; margin-top: 20px; color: #6e6e6e;}
     .sec2 .co-box.flex-box{position: absolute; top: 50%; justify-content: center; 
@@ -90,7 +92,11 @@ body{font-family: "Libre Baskerville", "Noto Sans KR", sans-serif;position: rela
     .sec4 .co-box.flex-box{align-items: center;justify-content: center; }
     .sec4 .co-box.flex-box> div { width: 20%;padding: 30px;}
     .sec4 .co-box.flex-box> div img{transition: all 0.4s ease-in-out;}
-    
+
+    /* 호버 시 */
+    .sec2 img, .sec3 img, .sec4 img {transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);}
+    .sec2 .modal-open:hover img, .sec3 .modal-open:hover img, .sec4 .modal-open:hover img {
+    transform: scale(1.1);}
 
 /* 모달창 */
 
@@ -289,30 +295,27 @@ body{font-family: "Libre Baskerville", "Noto Sans KR", sans-serif;position: rela
     <div class="container">
         <h2>반응형 웹 디자인</h2>
         <div class="co-box flex-box">            
-                    <div>
-                       <div class="modal-open" onclick="open_modal(0)">
-                            <img src="img/web1.png" alt="">
-                            <p>SONY</p>
-                       </div>
-                    </div>
-                    <div>
-                        <div>
-                            <img src="img/web2.png" onclick="open_modal(1)" alt="">
-                            <p>IT'S OLLE</p>
-                        </div>
-                    </div>
-                    <div>
-                        <div>
-                            <img src="img/web3.png" onclick="open_modal(2)" alt="">
-                            <p>NOVELPIA</p>
-                        </div>
-                    </div>
+            <div>
+               <div class="modal-open" onclick="open_modal(0)">
+                    <img src="img/web1.png" alt="">
+                    <p>SONY</p>
+               </div>
+            </div>
+            <div>
+                <div class="modal-open" onclick="open_modal(1)">
+                    <img src="img/web2.png" alt="">
+                    <p>IT'S OLLE</p>
+                </div>
+            </div>
+            <div>
+                <div class="modal-open" onclick="open_modal(2)">
+                    <img src="img/web3.png" alt="">
+                    <p>NOVELPIA</p>
+                </div>
+            </div>
         </div>
     </div>
-
-
 </section>
-    
 <section class="sec3">
     <div class="container">
         <h2>상세 페이지</h2>
