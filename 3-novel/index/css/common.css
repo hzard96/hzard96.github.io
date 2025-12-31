@@ -14,6 +14,7 @@
         header .menu span{color: #7632fe;}
         .logo-tag{font-size: 21px;padding-left: 40px;align-items: center;}
         .logo-tag a{color: #202020;padding: 0 20px;}
+        .logo-tag a:hover{color: #7632fe;}
         .menu >ul >li{display: inline-block;padding: 0 30px;}
         .menu >ul >li span{font-size: 30px;}
         .menu >ul >li span:hover{cursor: pointer;}
@@ -50,6 +51,7 @@
 
         .top-nav {align-items: center;justify-content: flex-start;gap: 35px;padding: 20px 0;}
         .top-nav p{color: #202020;font-size: 21px;font-weight: bold;}
+        .top-nav p:hover{color: #7632fe;}
 
                   /* 네비바텀 */
                 .sec0{display: none;}
