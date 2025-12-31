@@ -26,7 +26,7 @@ body{font-family: "Libre Baskerville", "Noto Sans KR", sans-serif;position: rela
 
 /*     sec0 */
     .sec0{background-color: #58C3E0;width: 100%; height: 100vh;position: fixed; z-index: 100;top: 0px;left: 0px;transition: all 0.8s;
-    animation-name: hide; animation-duration: 0.8s; animation-delay: 5s; animation-fill-mode: forwards; transform: translateZ(0);
+    animation-name: hide; animation-duration: 0.8s; animation-delay: 2s; animation-fill-mode: forwards; transform: translateZ(0);
     }
     .sec0 img{width: 100%;max-width: 400px;margin: auto;}
     @keyframes hide{from{}to{left:-100% ;}}
@@ -700,7 +700,7 @@ $('.sec0').click(function(){
             document.querySelector('.walk-r').classList.add('rotate');
             document.querySelector('.walk-r2').classList.add('rotate');
              
-        }, 1000); // 1초 후 실행
+        },500); // 0.5초 후 실행
     });
 </script>
 
