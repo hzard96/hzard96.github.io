@@ -37,7 +37,7 @@
     /* 창업문의 */
     
     
-    .store{position: fixed;width:100%; top: 700px; right: 50px;width: 100px;}
+    .store{position: fixed;width:100%; top: 600px; right: 50px;width: 100px;}
     .icon svg {width: 120px;height: 120px;outline: 3px solid #2bb8a3;outline-offset: 0px;border-radius: 50%; background-color: #ffffff;}
     .icon svg path {transform: scale(0.8); transform-origin: center; transform-box: fill-box;}
     .icon span {margin-top: 10px;font-size: 26px;color: #2bb8a3;display: block;text-align: center;}
@@ -56,7 +56,7 @@
 
     /* 미디어쿼리 */
     @media(max-width: 1024px){
-        .container{padding: 0 20pxw;}
+        .container{padding: 0 20px;}
     header ul li{font-size: 18px;}
     header .logo img{width: 150px; padding-left: 30px;}
 
