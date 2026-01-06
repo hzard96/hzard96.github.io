@@ -36,10 +36,13 @@
     }
 
 
+    .intro {display: block;max-width: 100%;margin:auto;}
+    .intro-mo {display: none;max-width: 100%; height:auto; margin:auto;}
+
+
     @media(max-width:1400px){
-    .modal, .modal-wrap{display: none};
-    }
-/* intro 내역 ===================  */
+        .modal, .modal-wrap{display: none};
+        }
 
 
     /* 섹션1 */
@@ -74,6 +77,11 @@
 
    
         /* 섹션1 */
+        .modal, .modal-wrap { display: block; }
+        .intro {display:none;}
+        .intro-mo {display: block;}
+        .modal-body h2 {font-size: 24px;margin-bottom: 30px;padding-top: 10px;}
+        .modal-close {right: 20px;top: 28px;font-size: 30px;padding: 10px;}
         
         .sec1 .text-box p {font-size: 40px;}
          .sec1 span{display: block;}
