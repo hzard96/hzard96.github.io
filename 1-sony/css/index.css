@@ -35,10 +35,6 @@
         font-size: 40px;
     }
 
-
-    @media(max-width:1400px){
-    .modal, .modal-wrap{display: none};
-    }
 /* intro 내역 ===================  */
 
     /* 섹션1 부분 */
@@ -113,7 +109,12 @@
     }
     .swiper-pagination-bullet{width: 14px;height: 14px; background-color: #f5f5f7;} 
 
-    @media(max-width:1400px){.modal, .modal-wrap{display: none};
+    .intro {display: block;max-width: 100%;margin:auto;}
+    .intro-mo {display: none;max-width: 100%; height:auto; margin:auto;}
+
+
+    @media(max-width:1400px){
+        .modal, .modal-wrap{display: none};
         }
 
         /* 미디어쿼리 테블릿 */
@@ -143,7 +144,11 @@
 
     /* 미디어쿼리 폰 */
     @media (max-width:767px){
-        
+        .modal, .modal-wrap { display: block; }
+        .intro {display:none;}
+        .intro-mo {display: block;}
+        .modal-body h2 {font-size: 24px;margin-bottom: 30px;padding-top: 10px;}
+        .modal-close {right: 20px;top: 32px;font-size: 30px;padding: 10px;}
         
 
     section.cont2{padding: 0 10px;}    
