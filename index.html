@@ -26,7 +26,7 @@ body{font-family: "Libre Baskerville", "Noto Sans KR", sans-serif;position: rela
 
 /*     sec0 */
     .sec0{background-color: #58C3E0;width: 100%; height: 100vh;position: fixed; z-index: 100;top: 0px;left: 0px;transition: all 0.8s;
-    animation-name: hide; animation-duration: 0.8s; animation-delay: 2s; animation-fill-mode: forwards; transform: translateZ(0);
+    animation-name: hide; animation-duration: 0.8s; animation-delay: 1.2s; animation-fill-mode: forwards; transform: translateZ(0);
     }
     .sec0 img{width: 100%;max-width: 400px;margin: auto;}
     @keyframes hide{from{}to{left:-100% ;}}
@@ -50,6 +50,7 @@ body{font-family: "Libre Baskerville", "Noto Sans KR", sans-serif;position: rela
     .sec1 .co-box.flex-box{position: absolute; top: 50%; transform: translateY(-50%); align-items: center; width: 90%;left: 5%;} /* 위드값만 섹션마다 조절하기 */
     .sec1 .co-box > .left{width: 50%; }
     .sec1 .co-box > .left img{width: 60%; margin: auto;}
+    .sec1 .tape{text-align: center;display: block;}
     .sec1 .co-box > .right {width: 50%;}
     .sec1 .bg-box {margin-top: 30px;}
     .sec1 p{font-size: 24px;margin-top: 30px;}
@@ -193,8 +194,15 @@ body{font-family: "Libre Baskerville", "Noto Sans KR", sans-serif;position: rela
     .sec1 p{font-size: 18px;}
     .sec1 h3{font-size: 21px;}
     .sec1 h3 span{font-size: 26px;}
-    .sec1 .co-box > .left img {display: none;}
+    .sec1 .co-box > .left{display: flex;align-items: center;gap: 20px;margin-top: 50px;}
+    .sec1 .tape{white-space: nowrap;margin: 0;}
+    .sec1 .tape p{flex-wrap: nowrap;display: inline-block;align-items: center;}
+    .sec1 .co-box > .left img {display: block;width: 70%;margin-bottom: 10px;}
     .sec1 .co-box > .right {width: 100%;}
+    .sec1 .co-box > .right p{line-height: 1.8;margin-top: 10px;}
+    
+
+
     .sec2 p{font-size: 14px;}   
     .sec2 .co-box.flex-box> div {width: 25%;padding: 10px;}
     .sec3 p{font-size: 14px;}
@@ -276,7 +284,8 @@ body{font-family: "Libre Baskerville", "Noto Sans KR", sans-serif;position: rela
             <h2>PORTFOLIO</h2>
             <div class="co-box flex-box">
             <div class="left">
-                <img src="img/logo.svg" alt="HZARD 로고" />
+                <img src="img/tape.png" alt="hzard tape" />
+                <p class="tape">기획 · 디자인 · 기여도 <span>100%</span></p>
             </div>
             <div class="right"> 
                 <h3>
@@ -700,7 +709,7 @@ $('.sec0').click(function(){
             document.querySelector('.walk-r').classList.add('rotate');
             document.querySelector('.walk-r2').classList.add('rotate');
              
-        },500); // 0.5초 후 실행
+        },200); // 0.2초 후 실행
     });
 </script>
 
